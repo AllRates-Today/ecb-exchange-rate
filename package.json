@@ -22,10 +22,10 @@
   "homepage": "https://allratestoday.com/central-bank-rates-api/ecb/",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Exchange-RateAPI/ecb-exchange-rate.git"
+    "url": "git+https://github.com/AllRates-Today/ecb-exchange-rate.git"
   },
   "bugs": {
-    "url": "https://github.com/Exchange-RateAPI/ecb-exchange-rate/issues"
+    "url": "https://github.com/AllRates-Today/ecb-exchange-rate/issues"
   },
   "license": "MIT",
   "author": "AllRatesToday <hello@allratestoday.com> (https://allratestoday.com)",
