@@ -1,0 +1,54 @@
+{
+  "name": "ecb-exchange-rate",
+  "version": "1.0.0",
+  "description": "Official European Central Bank (Eurozone) daily exchange rates — ~41 currencies vs EUR, history since 1999. Zero-dependency Node.js/TypeScript client.",
+  "keywords": [
+    "ecb",
+    "european",
+    "central",
+    "bank",
+    "exchange-rate",
+    "exchange-rates",
+    "currency",
+    "forex",
+    "fx",
+    "eur",
+    "central-bank",
+    "official-rates",
+    "eurozone",
+    "api",
+    "typescript"
+  ],
+  "homepage": "https://allratestoday.com/central-bank-rates-api/ecb/",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Exchange-RateAPI/ecb-exchange-rate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Exchange-RateAPI/ecb-exchange-rate/issues"
+  },
+  "license": "MIT",
+  "author": "AllRatesToday <hello@allratestoday.com> (https://allratestoday.com)",
+  "type": "module",
+  "main": "./index.cjs",
+  "module": "./index.mjs",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.mjs",
+      "require": "./index.cjs"
+    }
+  },
+  "files": [
+    "index.mjs",
+    "index.cjs",
+    "index.d.ts",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false
+}
