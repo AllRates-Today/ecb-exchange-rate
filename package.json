@@ -1,7 +1,7 @@
 {
   "name": "ecb-exchange-rate",
-  "version": "1.0.1",
-  "description": "Official European Central Bank (Eurozone) daily exchange rates — ~41 currencies vs EUR, history since 1999. Zero-dependency Node.js/TypeScript client.",
+  "version": "1.1.2",
+  "description": "Official European Central Bank (Eurozone) daily exchange rates — 29 currencies vs EUR, history since 1999. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "ecb",
     "european",
