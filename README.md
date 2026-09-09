@@ -70,10 +70,10 @@ const pair = await getRate('USD', 'EUR', { apiKey: 'art_live_...' });
 {
   bank: 'ecb',
   name: 'European Central Bank',
-  rate_date: '2026-08-11',   // European Central Bank's own publication date
+  rate_date: '2026-09-09',   // European Central Bank's own publication date
   source: 'USD',
   target: 'EUR',
-  rate: 0.866551,
+  rate: 0.858222,
   rate_type: 'reference',
   derived: true,
   method: 'inverse',  // computed from the published EUR/USD print
@@ -98,9 +98,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'ecb',
   name: 'European Central Bank',
-  rate_date: '2026-08-11',
+  rate_date: '2026-09-09',
   rates: [
-    { "base": "EUR", "quote": "USD", "type": "reference", "value": 1.154 },
+    { "base": "EUR", "quote": "USD", "type": "reference", "value": 1.1652 },
     // … the rest of the published table (29 currencies vs EUR)
   ],
   disclaimer: '…'
@@ -140,7 +140,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'ecb-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'EUR', from: '2026-01-01', to: '2026-08-11' },
+  { source: 'USD', target: 'EUR', from: '2026-01-01', to: '2026-09-09' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -153,11 +153,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'EUR',
   from: '2026-01-01',
-  to: '2026-08-11',
+  to: '2026-09-09',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-08-11', rate: 0.866551, rate_type: 'reference', derived: true, method: 'inverse' },
+    { date: '2026-09-09', rate: 0.858222, rate_type: 'reference', derived: true, method: 'inverse' },
     // …
   ],
   disclaimer: '…'
@@ -170,9 +170,9 @@ Pass `{ symbol: 'USD' }` instead of `source`/`target` to get the raw published r
 
 ## 🗺️ Currencies covered
 
-European Central Bank currently publishes rates covering **30 currencies** (as of the latest table):
+European Central Bank currently publishes rates covering **29 currencies** against the EUR (as of the latest table):
 
-`AUD` · `BRL` · `CAD` · `CHF` · `CNY` · `CZK` · `DKK` · `EUR` · `GBP` · `HKD` · `HUF` · `IDR` · `ILS` · `INR` · `ISK` · `JPY` · `KRW` · `MXN` · `MYR` · `NOK` · `NZD` · `PHP` · `PLN` · `RON` · `SEK` · `SGD` · `THB` · `TRY` · `USD` · `ZAR`
+🇦🇺 `AUD` · 🇧🇷 `BRL` · 🇨🇦 `CAD` · 🇨🇭 `CHF` · 🇨🇳 `CNY` · 🇨🇿 `CZK` · 🇩🇰 `DKK` · 🇬🇧 `GBP` · 🇭🇰 `HKD` · 🇭🇺 `HUF` · 🇮🇩 `IDR` · 🇮🇱 `ILS` · 🇮🇳 `INR` · 🇮🇸 `ISK` · 🇯🇵 `JPY` · 🇰🇷 `KRW` · 🇲🇽 `MXN` · 🇲🇾 `MYR` · 🇳🇴 `NOK` · 🇳🇿 `NZD` · 🇵🇭 `PHP` · 🇵🇱 `PLN` · 🇷🇴 `RON` · 🇸🇪 `SEK` · 🇸🇬 `SGD` · 🇹🇭 `THB` · 🇹🇷 `TRY` · 🇺🇸 `USD` · 🇿🇦 `ZAR`
 
 ## ⚖️ Published vs derived rates
 
@@ -235,6 +235,14 @@ getRate('USD', 'EUR', { apiKey: 'art_live_...' }).then((pair) => console.log(pai
 | `getLatestRates({ apiKey })` | Free | The central bank's full latest published table |
 | `getRatesForDate(date, { apiKey, source?, target? })` | Paid | The official table (or one pair) for a YYYY-MM-DD date |
 | `getHistory({ symbol \| source+target, from?, to? }, { apiKey })` | Paid | Daily series since 1999 |
+
+## 📥 Bulk data (no key)
+
+Need the whole archive rather than an API call? The same published tables are mirrored daily as open data:
+
+- Hugging Face: [AllRates/central-bank-exchange-rates](https://huggingface.co/datasets/AllRates/central-bank-exchange-rates) — one CSV per institution (`rates/ecb.csv`)
+- Kaggle: [allratestoday/central-bank-exchange-rates](https://www.kaggle.com/datasets/allratestoday/central-bank-exchange-rates)
+- CDN JSON: `https://cdn.jsdelivr.net/gh/AllRates-Today/central-bank-exchange-rates@main/data/ecb/latest.json`
 
 ## 🔗 Links
 
