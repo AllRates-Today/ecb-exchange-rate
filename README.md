@@ -85,10 +85,10 @@ const pair = await getRate('USD', 'EUR', { apiKey: 'art_live_...' });
 {
   bank: 'ecb',
   name: 'European Central Bank',
-  rate_date: '2026-09-09',   // European Central Bank's own publication date
+  rate_date: '2026-09-25',   // European Central Bank's own publication date
   source: 'USD',
   target: 'EUR',
-  rate: 0.858222,
+  rate: 0.876962,
   rate_type: 'reference',
   derived: true,
   method: 'inverse',  // computed from the published EUR/USD print
@@ -113,9 +113,9 @@ console.log(table.rate_date, table.rates.length);
 {
   bank: 'ecb',
   name: 'European Central Bank',
-  rate_date: '2026-09-09',
+  rate_date: '2026-09-25',
   rates: [
-    { "base": "EUR", "quote": "USD", "type": "reference", "value": 1.1652 },
+    { "base": "EUR", "quote": "USD", "type": "reference", "value": 1.1403 },
     // … the rest of the published table (29 currencies vs EUR)
   ],
   disclaimer: '…'
@@ -155,7 +155,7 @@ Paid plans. One resolved rate per publication date — ready for charting, reval
 import { getHistory } from 'ecb-exchange-rate';
 
 const series = await getHistory(
-  { source: 'USD', target: 'EUR', from: '2026-01-01', to: '2026-09-09' },
+  { source: 'USD', target: 'EUR', from: '2026-01-01', to: '2026-09-25' },
   { apiKey: 'art_live_...' }
 );
 ```
@@ -168,11 +168,11 @@ const series = await getHistory(
   source: 'USD',
   target: 'EUR',
   from: '2026-01-01',
-  to: '2026-09-09',
+  to: '2026-09-25',
   count: 152,
   rates: [
     // one entry per publication date
-    { date: '2026-09-09', rate: 0.858222, rate_type: 'reference', derived: true, method: 'inverse' },
+    { date: '2026-09-25', rate: 0.876962, rate_type: 'reference', derived: true, method: 'inverse' },
     // …
   ],
   disclaimer: '…'
