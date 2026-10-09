@@ -4,6 +4,8 @@
 [![license](https://img.shields.io/npm/l/ecb-exchange-rate.svg)](https://github.com/AllRates-Today/ecb-exchange-rate/blob/main/LICENSE)
 [![zero dependencies](https://img.shields.io/badge/dependencies-0-brightgreen.svg)](https://www.npmjs.com/package/ecb-exchange-rate)
 [![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg)](https://www.typescriptlang.org/)
+[![EUR/USD today](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fecb%3Fsource%3DEUR%26target%3DUSD&query=%24.rate&label=EUR%2FUSD%20published%20by%20European%20Central%20Bank&color=0A7E8C&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/ecb/)
+[![rate date](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fallratestoday.com%2Fapi%2Fopen%2Fcentral-bank%2Fecb%3Fsource%3DEUR%26target%3DUSD&query=%24.rate_date&label=rate%20date&color=555&cacheSeconds=3600)](https://allratestoday.com/central-bank-rates-api/ecb/)
 
 **Official European Central Bank (the Eurozone) daily exchange rates for Node.js and TypeScript. The published central bank rates behind tax filings, customs valuations, audits, and compliant invoicing — not market estimates, but the numbers European Central Bank itself prints, every business day.**
 
@@ -32,6 +34,48 @@ console.log(r.rate_date, r.rates.length); // the central bank's latest published
 ```
 
 The open endpoint serves the *latest* table only and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables, history, and CSV/XML/Excel output.
+
+## 📈 Latest published table
+
+Today's full European Central Bank table, straight from the central bank's latest publication. On GitHub it is refreshed by [a daily Action](.github/workflows/daily-table.yml) that reads the keyless endpoint above and commits only when the central bank publishes a new table; the copy on npm is as of the package's publish date.
+
+<!-- daily-table:start -->
+Published **2026-10-08** by European Central Bank — 29 rates. Updated 2026-10-08.
+
+| Base | Quote | Type | Rate |
+| --- | --- | --- | ---: |
+| EUR | AUD | reference | 1.611 |
+| EUR | BRL | reference | 5.6118 |
+| EUR | CAD | reference | 1.5953 |
+| EUR | CHF | reference | 0.9326 |
+| EUR | CNY | reference | 7.4972 |
+| EUR | CZK | reference | 24.403 |
+| EUR | DKK | reference | 7.4739 |
+| EUR | GBP | reference | 0.84698 |
+| EUR | HKD | reference | 8.7783 |
+| EUR | HUF | reference | 366.25 |
+| EUR | IDR | reference | 20045.31 |
+| EUR | ILS | reference | 3.4423 |
+| EUR | INR | reference | 108.2635 |
+| EUR | ISK | reference | 137 |
+| EUR | JPY | reference | 177.05 |
+| EUR | KRW | reference | 1502.79 |
+| EUR | MXN | reference | 20.1486 |
+| EUR | MYR | reference | 4.5768 |
+| EUR | NOK | reference | 10.717 |
+| EUR | NZD | reference | 2.0014 |
+| EUR | PHP | reference | 70.475 |
+| EUR | PLN | reference | 4.3753 |
+| EUR | RON | reference | 5.3434 |
+| EUR | SEK | reference | 11.194 |
+| EUR | SGD | reference | 1.434 |
+| EUR | THB | reference | 37.68 |
+| EUR | TRY | reference | 55.0523 |
+| EUR | USD | reference | 1.1186 |
+| EUR | ZAR | reference | 18.6252 |
+
+Source: [Official rates published by ECB, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/ecb/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
+<!-- daily-table:end -->
 
 ## 🔑 Get your API key
 
