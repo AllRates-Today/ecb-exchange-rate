@@ -42,39 +42,39 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-14** by European Central Bank — 29 rates. Updated 2026-10-14.
+Published **2026-10-15** by European Central Bank — 29 rates. Updated 2026-10-15.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| EUR | AUD | reference | 1.5971 |
-| EUR | BRL | reference | 5.6246 |
-| EUR | CAD | reference | 1.5918 |
-| EUR | CHF | reference | 0.933 |
-| EUR | CNY | reference | 7.4925 |
-| EUR | CZK | reference | 24.357 |
-| EUR | DKK | reference | 7.4754 |
-| EUR | GBP | reference | 0.84385 |
-| EUR | HKD | reference | 8.7859 |
-| EUR | HUF | reference | 363.3 |
-| EUR | IDR | reference | 20062.67 |
-| EUR | ILS | reference | 3.4443 |
-| EUR | INR | reference | 106.5283 |
+| EUR | AUD | reference | 1.6218 |
+| EUR | BRL | reference | 5.6679 |
+| EUR | CAD | reference | 1.5923 |
+| EUR | CHF | reference | 0.9305 |
+| EUR | CNY | reference | 7.4993 |
+| EUR | CZK | reference | 24.353 |
+| EUR | DKK | reference | 7.475 |
+| EUR | GBP | reference | 0.8461 |
+| EUR | HKD | reference | 8.7953 |
+| EUR | HUF | reference | 363.6 |
+| EUR | IDR | reference | 20112.25 |
+| EUR | ILS | reference | 3.4769 |
+| EUR | INR | reference | 106.5408 |
 | EUR | ISK | reference | 136.4 |
-| EUR | JPY | reference | 177.39 |
-| EUR | KRW | reference | 1496.54 |
-| EUR | MXN | reference | 20.56 |
-| EUR | MYR | reference | 4.5704 |
-| EUR | NOK | reference | 10.6035 |
-| EUR | NZD | reference | 1.9941 |
-| EUR | PHP | reference | 70.393 |
-| EUR | PLN | reference | 4.3658 |
-| EUR | RON | reference | 5.3442 |
-| EUR | SEK | reference | 11.158 |
-| EUR | SGD | reference | 1.4359 |
-| EUR | THB | reference | 37.587 |
-| EUR | TRY | reference | 55.2921 |
-| EUR | USD | reference | 1.1195 |
-| EUR | ZAR | reference | 18.4382 |
+| EUR | JPY | reference | 177.06 |
+| EUR | KRW | reference | 1508.48 |
+| EUR | MXN | reference | 20.7596 |
+| EUR | MYR | reference | 4.5757 |
+| EUR | NOK | reference | 10.652 |
+| EUR | NZD | reference | 2.0012 |
+| EUR | PHP | reference | 70.693 |
+| EUR | PLN | reference | 4.37 |
+| EUR | RON | reference | 5.3337 |
+| EUR | SEK | reference | 11.1765 |
+| EUR | SGD | reference | 1.4379 |
+| EUR | THB | reference | 37.592 |
+| EUR | TRY | reference | 55.3873 |
+| EUR | USD | reference | 1.1208 |
+| EUR | ZAR | reference | 18.5569 |
 
 Source: [Official rates published by ECB, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/ecb/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
