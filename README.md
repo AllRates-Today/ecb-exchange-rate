@@ -42,39 +42,39 @@ The open endpoint serves the *latest* table only and asks for a visible attribut
 The image is rendered live from the keyless endpoint above, so it follows the central bank's publications on npm and on GitHub alike without a new release. The text copy below is there for search and copy-paste: on GitHub [a daily Action](.github/workflows/daily-table.yml) refreshes it whenever the central bank publishes a new table; on npm it is as of the package's publish date.
 
 <!-- daily-table:start -->
-Published **2026-10-15** by European Central Bank — 29 rates. Updated 2026-10-15.
+Published **2026-10-16** by European Central Bank — 29 rates. Updated 2026-10-16.
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| EUR | AUD | reference | 1.6218 |
-| EUR | BRL | reference | 5.6679 |
-| EUR | CAD | reference | 1.5923 |
-| EUR | CHF | reference | 0.9305 |
-| EUR | CNY | reference | 7.4993 |
-| EUR | CZK | reference | 24.353 |
-| EUR | DKK | reference | 7.475 |
-| EUR | GBP | reference | 0.8461 |
-| EUR | HKD | reference | 8.7953 |
-| EUR | HUF | reference | 363.6 |
-| EUR | IDR | reference | 20112.25 |
-| EUR | ILS | reference | 3.4769 |
-| EUR | INR | reference | 106.5408 |
-| EUR | ISK | reference | 136.4 |
-| EUR | JPY | reference | 177.06 |
-| EUR | KRW | reference | 1508.48 |
-| EUR | MXN | reference | 20.7596 |
-| EUR | MYR | reference | 4.5757 |
-| EUR | NOK | reference | 10.652 |
-| EUR | NZD | reference | 2.0012 |
-| EUR | PHP | reference | 70.693 |
+| EUR | AUD | reference | 1.6171 |
+| EUR | BRL | reference | 5.7197 |
+| EUR | CAD | reference | 1.5935 |
+| EUR | CHF | reference | 0.9272 |
+| EUR | CNY | reference | 7.524 |
+| EUR | CZK | reference | 24.323 |
+| EUR | DKK | reference | 7.4748 |
+| EUR | GBP | reference | 0.84385 |
+| EUR | HKD | reference | 8.8316 |
+| EUR | HUF | reference | 363.08 |
+| EUR | IDR | reference | 20290.28 |
+| EUR | ILS | reference | 3.4822 |
+| EUR | INR | reference | 106.864 |
+| EUR | ISK | reference | 136.2 |
+| EUR | JPY | reference | 177.82 |
+| EUR | KRW | reference | 1499.01 |
+| EUR | MXN | reference | 20.6871 |
+| EUR | MYR | reference | 4.5929 |
+| EUR | NOK | reference | 10.624 |
+| EUR | NZD | reference | 1.9868 |
+| EUR | PHP | reference | 70.858 |
 | EUR | PLN | reference | 4.37 |
-| EUR | RON | reference | 5.3337 |
-| EUR | SEK | reference | 11.1765 |
-| EUR | SGD | reference | 1.4379 |
-| EUR | THB | reference | 37.592 |
-| EUR | TRY | reference | 55.3873 |
-| EUR | USD | reference | 1.1208 |
-| EUR | ZAR | reference | 18.5569 |
+| EUR | RON | reference | 5.331 |
+| EUR | SEK | reference | 11.145 |
+| EUR | SGD | reference | 1.4395 |
+| EUR | THB | reference | 37.602 |
+| EUR | TRY | reference | 55.7328 |
+| EUR | USD | reference | 1.1253 |
+| EUR | ZAR | reference | 18.493 |
 
 Source: [Official rates published by ECB, served by AllRatesToday](https://allratestoday.com/central-bank-rates-api/ecb/). Rates are as printed by the central bank; AllRatesToday is not affiliated with it.
 <!-- daily-table:end -->
@@ -268,7 +268,7 @@ curl "https://allratestoday.com/api/v1/central-bank/ecb/latest?format=xml&api_ke
 - MCP server: `npx -y @allratestoday/central-bank-mcp` (stdio) or the hosted endpoint `https://allratestoday.com/api/mcp` — tools for official rates, history, cross-bank comparison and publication calendars
 - Already using the general SDK or MCP server? Since 2026-10-01 [`@allratestoday/sdk`](https://www.npmjs.com/package/@allratestoday/sdk) 1.4+ has `officialRates('ecb')` and [`@allratestoday/mcp-server`](https://www.npmjs.com/package/@allratestoday/mcp-server) 0.6+ has a `get_official_rates` tool — both return this source's latest table with no key, so you can add it without a second dependency
 - Claude Code plugin (no key): `/plugin marketplace add AllRates-Today/claude-code-plugin` then `/plugin install allratestoday@allratestoday` — bundles both MCP servers plus an `/official-rate ecb ...` command
-- Need dated tables or history for an evaluation? Agents can self-issue a trial key with no signup: `POST https://allratestoday.com/api/agent/keys` (send `Content-Type: application/json`) returns a 100-call key valid 7 days; the MCP servers expose it as `request_trial_key`
+- Evaluating? Agents can self-issue a trial key with no signup: `POST https://allratestoday.com/api/agent/keys` (send `Content-Type: application/json`) returns a 100-call key valid 7 days that covers the free-plan methods (latest table, pairs); dated tables and history need a [paid plan](https://allratestoday.com/pricing/). The MCP servers expose it as `request_trial_key`
 - Machine-readable site guide: [llms.txt](https://allratestoday.com/llms.txt) · [for-ai-agents](https://allratestoday.com/for-ai-agents/)
 
 ## ⚖️ Published vs derived rates
