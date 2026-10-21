@@ -37,7 +37,7 @@ const r = await fetch('https://allratestoday.com/api/open/central-bank/ecb').the
 console.log(r.rate_date, r.rates.length); // the central bank's latest published table, no key
 ```
 
-The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and asks for a visible attribution link. The client below uses the keyed API, which adds point-in-time tables and history.
+The open endpoint serves the *latest* table only (JSON by default; add `?format=csv`, `xml` or `xlsx` for a file) and is free to use with a visible, followable link where the rates are shown: `<a href="https://allratestoday.com">Exchange rates by AllRatesToday</a>` (terms: <https://allratestoday.com/terms/#attribution>). The client below uses the keyed API, which adds point-in-time tables and history; with a key the link is appreciated, not required.
 
 ## 📈 Latest published table
 
@@ -47,39 +47,39 @@ The image is rendered live from the keyless endpoint above, so it follows the ce
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-10-20 by European Central Bank — 29 rates. Updated 2026-10-20.</summary>
+<summary>Table as text: published 2026-10-21 by European Central Bank — 29 rates. Updated 2026-10-21.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| EUR | AUD | reference | 1.6056 |
-| EUR | BRL | reference | 5.6339 |
-| EUR | CAD | reference | 1.5758 |
-| EUR | CHF | reference | 0.9237 |
-| EUR | CNY | reference | 7.4894 |
-| EUR | CZK | reference | 24.329 |
+| EUR | AUD | reference | 1.5971 |
+| EUR | BRL | reference | 5.6432 |
+| EUR | CAD | reference | 1.5779 |
+| EUR | CHF | reference | 0.9256 |
+| EUR | CNY | reference | 7.4999 |
+| EUR | CZK | reference | 24.262 |
 | EUR | DKK | reference | 7.4746 |
-| EUR | GBP | reference | 0.84028 |
-| EUR | HKD | reference | 8.8023 |
-| EUR | HUF | reference | 364.68 |
-| EUR | IDR | reference | 20170.57 |
-| EUR | ILS | reference | 3.4853 |
-| EUR | INR | reference | 106.459 |
+| EUR | GBP | reference | 0.83825 |
+| EUR | HKD | reference | 8.8155 |
+| EUR | HUF | reference | 365 |
+| EUR | IDR | reference | 20269.17 |
+| EUR | ILS | reference | 3.4726 |
+| EUR | INR | reference | 106.1265 |
 | EUR | ISK | reference | 136.2 |
-| EUR | JPY | reference | 177.34 |
-| EUR | KRW | reference | 1489.17 |
-| EUR | MXN | reference | 20.7719 |
-| EUR | MYR | reference | 4.5788 |
-| EUR | NOK | reference | 10.5245 |
-| EUR | NZD | reference | 1.9748 |
-| EUR | PHP | reference | 70.804 |
-| EUR | PLN | reference | 4.3768 |
-| EUR | RON | reference | 5.3308 |
-| EUR | SEK | reference | 11.123 |
-| EUR | SGD | reference | 1.4338 |
-| EUR | THB | reference | 37.738 |
-| EUR | TRY | reference | 55.6009 |
-| EUR | USD | reference | 1.1215 |
-| EUR | ZAR | reference | 18.4769 |
+| EUR | JPY | reference | 177.36 |
+| EUR | KRW | reference | 1489.15 |
+| EUR | MXN | reference | 20.7632 |
+| EUR | MYR | reference | 4.5843 |
+| EUR | NOK | reference | 10.512 |
+| EUR | NZD | reference | 1.9735 |
+| EUR | PHP | reference | 71.121 |
+| EUR | PLN | reference | 4.3635 |
+| EUR | RON | reference | 5.3365 |
+| EUR | SEK | reference | 11.0975 |
+| EUR | SGD | reference | 1.4348 |
+| EUR | THB | reference | 37.718 |
+| EUR | TRY | reference | 55.7233 |
+| EUR | USD | reference | 1.1234 |
+| EUR | ZAR | reference | 18.393 |
 
 </details>
 
