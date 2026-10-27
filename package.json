@@ -1,6 +1,6 @@
 {
   "name": "ecb-exchange-rate",
-  "version": "1.3.18",
+  "version": "1.3.19",
   "description": "Official European Central Bank (Eurozone) daily exchange rates — 29 currencies vs EUR, history since 1999. Zero-dependency Node.js/TypeScript client.",
   "keywords": [
     "ecb",
@@ -28,7 +28,17 @@
     "official-rates",
     "eurozone",
     "api",
-    "typescript"
+    "typescript",
+    "money",
+    "convert",
+    "conversion",
+    "exchange",
+    "rate",
+    "accounting",
+    "utilities",
+    "number",
+    "cart",
+    "ecommerce"
   ],
   "homepage": "https://allratestoday.com/central-bank-rates-api/ecb/",
   "repository": {
