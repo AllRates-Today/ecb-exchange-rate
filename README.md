@@ -32,39 +32,39 @@ The image is rendered live from the keyless endpoint, so it follows the central 
 
 <!-- daily-table:start -->
 <details>
-<summary>Table as text: published 2026-11-17 by European Central Bank — 29 rates. Updated 2026-11-17.</summary>
+<summary>Table as text: published 2026-11-18 by European Central Bank — 29 rates. Updated 2026-11-18.</summary>
 
 | Base | Quote | Type | Rate |
 | --- | --- | --- | ---: |
-| EUR | AUD | reference | 1.6316 |
-| EUR | BRL | reference | 6.3539 |
-| EUR | CAD | reference | 1.5704 |
-| EUR | CHF | reference | 0.9233 |
-| EUR | CNY | reference | 7.3254 |
-| EUR | CZK | reference | 24.387 |
-| EUR | DKK | reference | 7.4749 |
-| EUR | GBP | reference | 0.83305 |
-| EUR | HKD | reference | 8.6221 |
-| EUR | HUF | reference | 364.93 |
-| EUR | IDR | reference | 20077.73 |
-| EUR | ILS | reference | 3.5674 |
-| EUR | INR | reference | 102.72 |
+| EUR | AUD | reference | 1.6294 |
+| EUR | BRL | reference | 6.3818 |
+| EUR | CAD | reference | 1.569 |
+| EUR | CHF | reference | 0.9243 |
+| EUR | CNY | reference | 7.3126 |
+| EUR | CZK | reference | 24.386 |
+| EUR | DKK | reference | 7.4744 |
+| EUR | GBP | reference | 0.8329 |
+| EUR | HKD | reference | 8.6063 |
+| EUR | HUF | reference | 368.4 |
+| EUR | IDR | reference | 20020.71 |
+| EUR | ILS | reference | 3.5798 |
+| EUR | INR | reference | 102.4905 |
 | EUR | ISK | reference | 137 |
-| EUR | JPY | reference | 175.05 |
-| EUR | KRW | reference | 1468.36 |
-| EUR | MXN | reference | 20.2895 |
-| EUR | MYR | reference | 4.4983 |
-| EUR | NOK | reference | 10.5755 |
-| EUR | NZD | reference | 1.9985 |
-| EUR | PHP | reference | 69.974 |
-| EUR | PLN | reference | 4.4038 |
-| EUR | RON | reference | 5.3482 |
-| EUR | SEK | reference | 11.11 |
-| EUR | SGD | reference | 1.4163 |
-| EUR | THB | reference | 37.187 |
-| EUR | TRY | reference | 55.3987 |
-| EUR | USD | reference | 1.0989 |
-| EUR | ZAR | reference | 18.6073 |
+| EUR | JPY | reference | 174.85 |
+| EUR | KRW | reference | 1461.3 |
+| EUR | MXN | reference | 20.3738 |
+| EUR | MYR | reference | 4.5144 |
+| EUR | NOK | reference | 10.6045 |
+| EUR | NZD | reference | 1.9951 |
+| EUR | PHP | reference | 69.832 |
+| EUR | PLN | reference | 4.4118 |
+| EUR | RON | reference | 5.3467 |
+| EUR | SEK | reference | 11.143 |
+| EUR | SGD | reference | 1.4144 |
+| EUR | THB | reference | 37.264 |
+| EUR | TRY | reference | 55.3197 |
+| EUR | USD | reference | 1.0968 |
+| EUR | ZAR | reference | 18.8897 |
 
 </details>
 
